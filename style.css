@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+header {
+
+    background-color: #D9D9D9;
+}
+
+.containerHeader>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 5px;
+    font-size: 2em;
+    padding-left: 30px;
+}
+
+.containerHeader {
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*PARTIE DU MAIN SECTION 1*/
+
+.petiteIcone {
+    width: 5em;
+    height: auto;
+    position: relative;
+    left: 500px;
+    bottom: 300px;
+
+}
+
+.container1 h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    margin-top: 60px;
+
+
+}
+
+span {
+    color: #33CCCC;
+}
+
+.fournisseurs {
+    position: relative;
+    display: inline-block;
+}
+
+.fournisseurs::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: soulignement 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.marque {
+    position: relative;
+    display: inline-block;
+}
+
+.marque::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: soulignement 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.gris {
+    position: relative;
+    display: inline-block;
+    color: #3f3e3e;
+}
+
+.gris::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* Positionne la ligne sous le mot */
+    width: 100%;
+    height: 5px;
+    background-color: #3f3e3e;
+    transform: scaleX(0);
+    /* Commence avec la ligne invisible */
+    transform-origin: left;
+    animation: soulignement 1s ease forwards;
+    /* Lance l'animation */
+    animation-delay: 0.5s;
+    /* Décalage optionnel pour attendre un peu avant de démarrer */
+}
+
+@keyframes soulignement {
+    from {
+        transform: scaleX(0);
+        /* Départ de la ligne invisible */
+    }
+
+    to {
+        transform: scaleX(1);
+        /* Fait apparaître la ligne complètement */
+    }
+}
+
+
+.container2 img {
+    width: 25em;
+    height: auto;
+}
+
+.container1 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.cont3Img {
+    position: relative;
+    right: 50px;
+
+}
+
+.cont3Img img {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.img1 {
+    width: 12em;
+    position: relative;
+    right: 50px;
+    right: 70px;
+
+}
+
+.img2 {
+    width: 9em;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+
+}
+
+.espace {
+    color: black;
+    position: relative;
+    left: 150px;
+    bottom: 10px;
+}
+
+.containerButtom {
+    position: relative;
+    right: 60px;
+
+
+}
+
+.containerButtom h1 {
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.cont3Img2 img {
+    right: 20px;
+    width: 10em;
+    height: auto;
+    position: relative;
+    top: 40px;
+}
+
+.container3 {
+    margin-top: 5em;
+    position: relative;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ensembleButtom {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 155px;
+
+}
+
+.boutonInscrire {
+    font-weight: 700;
+    width: 250px;
+    background-color: #33CCCC;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.boutonInscrire:hover {
+    transform: scale(1.1);
+    /* Agrandit le bouton de 10% au survol */
+    color: #ffffff;
+    background-color: #3f3e3e;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boutonConnect {
+    font-weight: 700;
+    width: 250px;
+    color: #33CCCC;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 3px 8px rgb(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.boutonConnect:hover {
+    transform: scale(1.1);
+    /* Agrandit le bouton de 10% au survol */
+    color: #ffffff;
+    background-color: #3f3e3e;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*PARTIE DU MAIN SECTION 2 AVEC L'INTERMEDIAIRE*/
+
+.sectionInter h1 {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+
+}
+
+
+
+
+
+.sectionInter {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    top: 70px;
+    padding-top: 4em;
+}
+
+
+
+.sec2cont1 {
+    position: relative;
+    top: 100px;
+    left: 150px;
+
+
+}
+
+.sec2cont1 img {
+    width: 20em;
+    position: relative;
+    right: 45px;
+}
+
+.sec2cont1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.sec2cont2 imG {
+    width: 12em;
+
+}
+
+.sec2cont2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.sec2cont2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 100px;
+
+}
+
+.sec2cont3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    position: relative;
+    right: 70px;
+
+}
+
+.sec2cont3 img {
+    width: 15em;
+
+}
+
+.sec2cont3Text {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 20px;
+    left: 160px;
+
+
+
+}
+
+.ensemblecont2cont3 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.sec2cont3ensemble {
+    display: flex;
+}
+
+.sec2cont3ensemble h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
+
+
+.jaune {
+    display: inline-block;
+    position: relative;
+    color: #FDCB50;
+}
+
+.jaune::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #FDCB50;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.jaune.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.rouge {
+    color: #FD6050;
+    position: relative;
+    display: inline-block;
+}
+
+.rouge::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #FD6050;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.rouge.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+
+.noir {
+    color: black;
+}
+
+.espace2 {
+    display: inline-block;
+    position: relative;
+    left: 45px;
+}
+
+.espace2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 54%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.espace2.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.noirh2sec2cont3Text {
+    color: black;
+    position: relative;
+    left: 76px;
+}
+
+.noirh2sec2cont3Text2 {
+    color: black;
+    position: relative;
+    left: 160px;
+}
+
+
+
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15em;
+    gap: 300px;
+
+}
+
+
+
+/* PARTIE DU MAIN SECTION 3*/
+
+.sectionInt2 {
+
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    top: 200px;
+    padding: 5em;
+
+
+}
+
+.sectionInt2 h1 {
+    font-size: 2.5em;
+}
+
+.buttomDecouvrir {
+    margin-top: 30px;
+    color: white;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    border: none;
+    border-radius: 15px;
+    background-color: #33CCCC;
+    width: 5em;
+    padding: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.buttomDecouvrir:hover {
+    transform: scale(1.1);
+    /* Agrandit le bouton de 10% au survol */
+    color: #ffffff;
+    background-color: #3f3e3e;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sec3cont1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25em;
+    gap: 50px;
+
+}
+
+.sec3cont1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.sec3cont1 img {
+    width: 15em;
+    height: auto;
+}
+
+.assurons {
+    position: relative;
+    display: inline-block;
+}
+
+.assurons::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.assurons.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.coherent {
+    display: inline-block;
+    position: relative;
+}
+
+.coherent::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.coherent.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.reciproque {
+    position: relative;
+    display: inline-block;
+}
+
+.reciproque::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.reciproque.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.respect {
+    display: inline-block;
+    position: relative;
+}
+
+.respect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.respect.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.quoiFaire {
+    position: relative;
+    display: inline-block;
+}
+
+.quoiFaire::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 5px;
+    background-color: #33CCCC;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.5s ease;
+}
+
+.quoiFaire.ligne-visible::after {
+    transform: scaleX(1);
+}
+
+.sec3cont2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+
+.sec3cont2 img {
+    width: 20em;
+    height: auto;
+}
+
+.sec3cont2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    position: relative;
+    top: 90px;
+
+}
+
+/*BIEN DE PAGE OU FOOTER*/
+
+footer {
+    background-color: #D9D9D9;
+    padding: 60px;
+    margin-top: 20em;
+}
+
+footer h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contFooter {
+    display: flex;
+    gap: 50px;
+}
+
+.insta {
+    width: 3.2em;
+
+}
+
+.imgFooter {
+    width: 10em;
+    height: auto;
+}
